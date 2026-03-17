@@ -1,0 +1,13 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+default_language = "en"
+compile_sass = true
+build_search_index = false
+
+[markdown]
+highlight_code = true
+
+[extra]
+navbar_links = [
+  { title = "OCDO", url = "https://ocdo.fredhutch.org" },
+]
