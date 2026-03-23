@@ -623,6 +623,12 @@ h6:hover .zola-anchor {
   opacity: 1;
 }
 
+// Buttons
+button,
+.btn {
+  font-family: $sans-serifs;
+}
+
 // Teal button
 .btn-teal {
   --bs-btn-color: #fff;
