@@ -33,6 +33,13 @@ url = "https://sciwiki.fredhutch.org/datascience/wilds_wdl/"
 color = "light"
 
 # First section
+
+[[extra.headings_lists]]
+heading = "Organize and speed up your cluster computing with WDL"
+items = ["Use WDL workflows to make your work more composabile and portable", "Take an advantage of WDL modules ", "Save time by validating your workflows before submitting them"]
+heading_left = true
+hr = true
+
 [[extra.headings_lists]]
 heading = "Track and troubleshoot your workflows with ease"
 items = ["Monitor your workflows in real time", "View failed jobs, error messages, and past versions to troubleshoot failed workflows", "Save time by validating your workflows before submitting them"]
@@ -103,13 +110,13 @@ img = "images/pwb-start-server.png"
 [[extra.get_started]]
 number = 3
 title = "Validate and submit your WDL"
-text = """Use the 'Validate' tab to make sure your WDL is free of syntax errors. You don’t have to, but it can save you some time!"""
+text = """Once your PROOF server is up and running, first validate your WDL to ensure it is free from syntax errors. After validating your WDL, submit it, along with input and options JSON files to be run on the Fred Hutch cluster."""
 img = "images/pwb-submit.png"
 
 [[extra.get_started]]
 number = 4
-title = "Submit and track your WDLs"
-text = """Submit your WDLs and track their progress in real time."""
+title = "Track and troubleshoot your WDLs"
+text = """After submitting a WDL, you can track its progress, including the status of each job that it launches, in real time. If a job fails, do not get discouraged, WDL development is often an iterative process. OCDO offers several avenues for support in WDL development and using PROOF."""
 img = "images/pwb-track.png"
 
 [[extra.get_started]]
@@ -134,7 +141,7 @@ button_text = "Schedule a Code & Software DHC"
 
 [[extra.cards_help]]
 title = "Join the Community on Teams"
-text = """Fred Hutch staff can join our dedicated channel all about PROOF on Teams."""
+text = """Fred Hutch staff can join our dedicated channel all about PROOF Workbench and WDL development on Teams."""
 button_url = "https://teams.microsoft.com/l/team/19%3A8dMC1Joe-eP9Q_VPiA0fsfuTMlHZIrV1w3cCyzTXens1%40thread.tacv2/conversations?groupId=f1eb8b59-8250-4d36-9543-6718a77bda1f&tenantId=0054a3ea-b394-418b-ad1a-174138231fd6"
 button_text = "Connect on Teams"
 
