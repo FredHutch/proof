@@ -36,7 +36,7 @@ color = "light"
 
 [[extra.headings_lists]]
 heading = "Organize and speed up your cluster computing with WDL"
-items = ["Use WDL workflows to make your work more composabile and portable", "Take an advantage of WDL modules ", "Save time by validating your workflows before submitting them"]
+items = ["Use WDL workflows to make your work more composabile and portable", "Take an advantage of WDL modules that have already been optimized for the Fred Hutch cluster", "Share WDL workflows with your colleagues so they can verify, adapt, and improve on your results"]
 heading_left = true
 hr = true
 
