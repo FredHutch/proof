@@ -181,6 +181,11 @@ a.btn:active:not(.btn-light-teal) {
   color: $white;
 }
 
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
 .sans-serif,
 .sans-serif h1,
 .sans-serif h2 {
@@ -334,6 +339,53 @@ a.btn:active:not(.btn-light-teal) {
 
   .search-results.d-none.d-lg-block {
     display: none !important;
+  }
+
+  // Hero responsive
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero h2 {
+    font-size: 1.15rem;
+  }
+
+  .hero .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+
+  // Headings/lists section responsive font
+  .section-heading {
+    font-size: 1.5rem !important;
+  }
+
+  // Get Started section responsive
+  .get-started-step {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .big-number {
+    font-size: 48px !important;
+    line-height: 48px !important;
+  }
+
+  .get-started-step h4 {
+    font-size: 1.25rem !important;
+  }
+
+  .get-started-step .step-image {
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+
+  .get-started-step .step-image img {
+    max-width: 100% !important;
   }
 }
 
@@ -671,4 +723,117 @@ button,
   font-weight: 400;
   line-height: 64px; /* 85.333% */
   letter-spacing: -0.25px;
+  flex-shrink: 0;
+}
+
+// Section heading used in headings_lists
+.section-heading {
+  font-size: 2rem;
+}
+
+// Get Started section
+.get-started-title {
+  color: black;
+  margin-bottom: 4rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.get-started-step {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.get-started-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.get-started-step-title {
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 400;
+  border-bottom: 1px dotted #333;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.get-started-step-text {
+  margin-bottom: 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+// Inline number shown only on mobile
+.big-number-inline {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #000;
+}
+
+// Tablet adjustments
+@media (max-width: 767.98px) {
+  .get-started-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .get-started-step {
+    margin-bottom: 3rem;
+  }
+
+  .get-started-step-title {
+    font-size: 1.3rem;
+  }
+}
+
+// Mobile-first general helpers
+@media (max-width: 575.98px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+  }
+
+  .section-heading {
+    font-size: 1.3rem !important;
+  }
+
+  .big-number {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .get-started-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .get-started-step {
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+  }
+
+  .get-started-step-title {
+    font-size: 1.15rem;
+  }
+
+  .get-started-step-text {
+    font-size: 0.95rem;
+  }
+
+  .card-body {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .card-body div:first-child {
+    min-width: auto !important;
+  }
 }
