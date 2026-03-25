@@ -78,7 +78,7 @@
                 </div>
                 <div style="flex: 1;">
                   <h5 class="card-title">{{ card.title }}</h5>
-                  <p class="card-text">{{ card.text }}</p>
+                  <p class="card-text">{{ card.text | markdown | safe }}</p>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@
                 </div>
                 <div style="flex: 1;">
                   <h5 class="card-title">{{ card.title }}</h5>
-                  <p class="card-text">{{ card.text }}</p>
+                  <p class="card-text">{{ card.text | markdown | safe }}</p>
                 </div>
               </div>
             </div>
