@@ -36,62 +36,62 @@ color = "light"
 
 [[extra.headings_lists]]
 heading = "Organize and speed up your cluster computing with WDL"
-items = ["Use WDL workflows to make your work more composabile and portable", "Take an advantage of WDL modules that have already been optimized for the Fred Hutch cluster", "Share WDL workflows with your colleagues so they can verify, adapt, and improve on your results"]
+items = ["Use WDL workflows to make your work more composabile and portable.", "Take an advantage of WDL modules that have already been optimized for the Fred Hutch cluster.", "Share WDL workflows with your colleagues so they can verify, adapt, and improve on your results."]
 heading_left = true
 hr = true
 
 [[extra.headings_lists]]
-heading = "Track and troubleshoot your workflows with ease"
-items = ["Monitor your workflows in real time", "View failed jobs, error messages, and past versions to troubleshoot failed workflows", "Save time by validating your workflows before submitting them"]
-heading_left = true
-hr = true
-
-[[extra.headings_lists]]
-heading = "Make your future self happy with reproducible, organized work"
-items = ["Review past workflows to see the history of your work on a project",
-"Easily view and access the inputs associated with each submitted workflow",
-"Write meaningful labels and notes for your workflows to keep them organized or aid in troubleshooting",
-"Separate your work for different labs by creating server “blueprints”"]
+heading = "Validate, submit, track, and troubleshoot your workflows with ease"
+items = ["Monitor your running workflows in real time, and browse previous iterations of executed workflows.", "Inspect the detilas of failed jobs, error messages, and past versions to troubleshoot failed workflows.", "Get live help debugging workflows via Teams, Slack, or Data House Calls."]
 heading_left = false
 hr = true
 
+# [[extra.headings_lists]]
+# heading = "Make your future self happy with reproducible, organized work"
+# items = ["Review past workflows to see the history of your work on a project",
+# "Easily view and access the inputs associated with each submitted workflow",
+# "Write meaningful labels and notes for your workflows to keep them organized or aid in troubleshooting",
+# "Separate your work for different labs by creating server “blueprints”"]
+# heading_left = false
+# hr = true
+
 [[extra.headings_lists]]
-heading = "Make the best use of FH resources"
-items = ["Everything you submit on PROOF runs on the FH cluster, so there is no additional cost.", "You can use regulated space to run workflows involving regulated data. [Read more](#)"]
+heading = "Make the best of all the computing resources Fred Hutch has to offer"
+items = ["All of the workflows you submit with PROOF run on the Fred Hutch cluster, so there is no additional cost.", "Develop, test, and harden your workflows as a 'proof of concept' before moving compute to the cloud, saving money in the process.", "Working with data that is subject to an NIH Data Use Certification, perhaps from dbGaP? No problem, PROOF Workbench is [fully compliant](https://sciwiki.fredhutch.org/datademos/proof-regulated/)."]
 heading_left = true
 hr = false
 
 
 # Second section
 [[extra.cards_learn_to_use]]
-title = "Learning Resource"
-text = """Here is a blurb about the learning resource in question"""
-bi_icon = "bi-arrow-left-circle"
+title = "Connect to the Fred Hutch Cluster"
+text = """New to the cluster? Get started with [this self-paced course](https://hutchdatascience.org/FH_Cluster_101/)."""
+bi_icon = "bi-pc-display-horizontal"
 
 [[extra.cards_learn_to_use]]
-title = "Learning Resource"
-text = """Here is a blurb about the learning resource in question"""
-bi_icon = "bi-badge-tm"
+title = "Ready to dig into PROOF Workbench?"
+text = """[Our tutorial](https://sciwiki.fredhutch.org/datademos/pwb-tutorial/) is a great was to get acquainted with PROOF."""
+bi_icon = "bi-tools"
 
 [[extra.cards_learn_to_use]]
-title = "Learning Resource"
-text = """Here is a blurb about the learning resource in question"""
-bi_icon = "bi-basket-fill"
+title = "Go Faster with WILDS WDLs"
+text = """Browse the [WILDS WDL Library](https://sciwiki.fredhutch.org/datascience/wilds_wdl/) for ready-to-launch workflows."""
+bi_icon = "bi-speedometer"
 
 [[extra.cards_learn_to_use]]
-title = "Learning Resource"
-text = """Here is a blurb about the learning resource in question"""
-bi_icon = "bi-bank"
+title = "Discover Curated Containers"
+text = """Modularize your compute with the [WILDS Docker Library](https://sciwiki.fredhutch.org/datascience/wilds_docker/)."""
+bi_icon = "bi-box-seam"
 
 [[extra.cards_new_to_wdl]]
-title = "Learning Resource"
-text = """Here is a blurb about the learning resource in question"""
-bi_icon = "bi-bezier"
+title = "Learn to Write WDLs"
+text = """Get started with our [Developing WDL Workflows](https://hutchdatascience.org/Developing_WDL_Workflows/) self-paced course."""
+bi_icon = "bi-backpack2"
 
 [[extra.cards_new_to_wdl]]
-title = "Learning Resource"
-text = """Here is a blurb about the learning resource in question"""
-bi_icon = "bi-binoculars"
+title = "Write Workflows with Us"
+text = """OCDO is eager to [collaborate with you directly](https://centernet.fredhutch.org/u/data-science-lab/data-science/wilds-wdl.html) to write WDLs."""
+bi_icon = "bi-rocket-takeoff"
 
 
 # Third section

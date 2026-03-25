@@ -3,7 +3,7 @@
 <div class="hero">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-6 col-6 p-4">
+      <div class="col-12 col-lg-6 p-4">
         <h2>{{ section.extra.hero_title }}</h2>
         <h1>{{ section.extra.hero_proof }}</h1>
         <h2>{{ section.extra.hero_subtitle }}</h2>
@@ -31,8 +31,8 @@
           {% endfor %}
         </div>
       </div>
-      <div class="col-lg-2 col-2 p-4">
-        <img src="{{ section.extra.hero_image }}" width="500"></img>
+      <div class="col-12 col-lg-6 p-4 text-center">
+        <img src="{{ section.extra.hero_image }}" class="img-fluid hero-image" alt="PROOF Workbench demo">
       </div>
     </div>
   </div>
@@ -43,21 +43,18 @@
   <div class="container">
     {% for item in section.extra.headings_lists %}
     <div class="row align-items-center">
-      <div class="col-lg-6 col-12 p-4" style="{% if not item.heading_left %} display: none; {% endif %}">
-        <p style="font-size: 32px;">{{ item.heading }}</p>
+      <div class="col-lg-6 col-12 p-4 {% if not item.heading_left %}order-lg-2{% endif %}">
+        <p class="section-heading">{{ item.heading }}</p>
       </div>
-      <div class="col-lg-6 col-12 p-4">
+      <div class="col-lg-6 col-12 p-4 {% if not item.heading_left %}order-lg-1{% endif %}">
         <ul>
         {% for list_item in item.items %}
           <li>{{ list_item | markdown | safe }}</li>
         {% endfor %}
         </ul>
       </div>
-      <div class="col-lg-6 col-12 p-4" style="{% if item.heading_left %} display: none; {% endif %}">
-        <p style="font-size: 32px;">{{ item.heading }}</p>
-      </div>
     </div>
-    <hr {% if not item.hr %} style="display: none;" {% endif %}>
+    {% if item.hr %}<hr>{% endif %}
     {% endfor %}
   </div>
 </div>
@@ -70,15 +67,15 @@
         <h3 style="color:#FFFFFF">Learn to use PROOF Workbench</h3>
         <div class="row">
           {% for card in section.extra.cards_learn_to_use %}
-          <div class="col-lg-6 mb-4">
-            <div class="card">
-              <div class="card-body" style="display: flex; gap: 1rem; align-items: center;">
-                <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; min-width: 60px; height: 60px;">
+          <div class="col-lg-6 col-12 mb-4">
+            <div class="card h-100">
+              <div class="card-body d-flex flex-row gap-3 align-items-center">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="min-width: 50px; height: 50px;">
                   <i class="bi {{ card.bi_icon }}" style="font-size: 2rem;"></i>
                 </div>
-                <div style="flex: 1;">
+                <div class="flex-grow-1">
                   <h5 class="card-title">{{ card.title }}</h5>
-                  <p class="card-text">{{ card.text }}</p>
+                  <p class="card-text">{{ card.text | markdown | safe }}</p>
                 </div>
               </div>
             </div>
@@ -88,15 +85,15 @@
         <h4 style="color:#FFFFFF">New to WDL Workflows? Start here</h4>
         <div class="row">
           {% for card in section.extra.cards_new_to_wdl %}
-          <div class="col-lg-6 mb-4">
-            <div class="card" style="border-radius: 12px;">
-              <div class="card-body" style="display: flex; gap: 1rem; align-items: center;">
-                <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: center; min-width: 60px; height: 60px;">
+          <div class="col-lg-6 col-12 mb-4">
+            <div class="card h-100" style="border-radius: 12px;">
+              <div class="card-body d-flex flex-row gap-3 align-items-center">
+                <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="min-width: 50px; height: 50px;">
                   <i class="bi {{ card.bi_icon }}" style="font-size: 2rem;"></i>
                 </div>
-                <div style="flex: 1;">
+                <div class="flex-grow-1">
                   <h5 class="card-title">{{ card.title }}</h5>
-                  <p class="card-text">{{ card.text }}</p>
+                  <p class="card-text">{{ card.text | markdown | safe }}</p>
                 </div>
               </div>
             </div>
@@ -111,30 +108,30 @@
 <!--Third section-->
 <div style="background-color: #FFFFFF; width: 100vw; margin-left: calc(-50vw + 50%);">
   <div class="container pt-4">
-    <h3 style="color: black; margin-bottom: 4rem; font-size: 2.2rem; font-weight: 600;">Get started with PROOF</h3>
+    <h3 class="get-started-title">Get started with PROOF</h3>
     {% for item in section.extra.get_started %}
-    <div style="display: flex; gap: 3rem; align-items: flex-start; margin-bottom: 5rem;">
+    <div class="get-started-step">
       <!-- Large Number -->
-      <div class="big-number">
+      <div class="big-number d-none d-md-block">
         {{ item.number }}
       </div>
 
       <!-- Right part: Title + Content row -->
-      <div style="flex: 1;">
+      <div class="get-started-content">
         <!-- Title with dotted line spanning width -->
-        <h4 style="margin-bottom: 1.5rem; color: #000; font-size: 1.7rem; font-weight: 400; border-bottom: 1px dotted #333; padding-bottom: 0.5rem; width: 100%;">
-          {{ item.title }}
+        <h4 class="get-started-step-title">
+          <span class="d-md-none big-number-inline">{{ item.number }}.</span> {{ item.title }}
         </h4>
 
         <!-- Text and Image row below the title -->
         <div class="row align-items-start">
-          <div class="col-lg-6 col-12">
-            <p style="margin-bottom: 0; color: #333; line-height: 1.6; font-size: 1.05rem;">
+          <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+            <p class="get-started-step-text">
               {{ item.text | markdown | safe }}
             </p>
           </div>
-          <div class="col-lg-6 col-12" style="display: flex; justify-content: flex-end;">
-            <img src="{{ item.img }}" alt="{{ item.title }}" style="max-width: 95%; height: auto;">
+          <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-lg-end">
+            <img src="{{ item.img }}" alt="{{ item.title }}" class="img-fluid" style="max-width: 100%; height: auto;">
           </div>
         </div>
       </div>
@@ -149,17 +146,19 @@
     <div class="row align-items-center">
       <div class="col-lg-12 col-12 p-4">
         <h3 style="color: black">Get live help from real humans</h3>
-        <mall>We are here to help</mall>
+        <small>We are here to help</small>
         <div class="row mt-2">
           {% for card in section.extra.cards_help %}
-          <div class="col-lg-6 mb-4">
-            <div class="card border-0" style="border-radius: 12px;">
+          <div class="col-lg-6 col-12 mb-4">
+            <div class="card border-0 h-100" style="border-radius: 12px;">
               <div class="card-header border-0" style="background-color: #f8f9fa;">
                 <h5 class="card-title">{{ card.title }}</h5>
               </div>
-              <div class="card-body" style="display: flex; gap: 1rem; align-items: center;">
-                <div style="flex: 1;">
+              <div class="card-body d-flex flex-column">
+                <div class="flex-grow-1">
                   <p class="card-text">{{ card.text | markdown | safe }}</p>
+                </div>
+                <div>
                   <a
                     href="{{ card.button_url | safe }}"
                     class="btn btn-light-teal mt-3"
