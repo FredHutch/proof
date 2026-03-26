@@ -36,13 +36,13 @@ color = "light"
 
 [[extra.headings_lists]]
 heading = "Organize and speed up your cluster computing with WDL"
-items = ["Use WDL workflows to make your work more composabile and portable.", "Take an advantage of WDL modules that have already been optimized for the Fred Hutch cluster.", "Share WDL workflows with your colleagues so they can verify, adapt, and improve on your results."]
+items = ["Use WDL workflows to make your work more composable and portable.", "Take advantage of WDL modules that have already been optimized for the Fred Hutch cluster.", "Share WDL workflows with your colleagues so they can verify, adapt, and improve on your results."]
 heading_left = true
 hr = true
 
 [[extra.headings_lists]]
 heading = "Validate, submit, track, and troubleshoot your workflows with ease"
-items = ["Monitor your running workflows in real time, and browse previous iterations of executed workflows.", "Inspect the detilas of failed jobs, error messages, and past versions to troubleshoot failed workflows.", "Get live help debugging workflows via Teams, Slack, or Data House Calls."]
+items = ["Monitor your running workflows in real time, and browse previous iterations of executed workflows.", "Inspect the details of failed jobs, error messages, and past versions to troubleshoot failed workflows.", "Get live help debugging workflows via Teams, Slack, or Data House Calls."]
 heading_left = false
 hr = true
 
@@ -104,7 +104,7 @@ img = "images/pwb-login.png"
 [[extra.get_started]]
 number = 2
 title = "Log in and start your server"
-text = """Start a PROOF server that will track the WDL workflows you submit to the Fred Hutch cluster. Your PROOF server is like a puppet-master, coordinating the tasks articulated in your WDL, ensuring that workflow results are cached for faster execution, and paralleling your computing with no extra effort on your part."""
+text = """Start a PROOF server that will track the WDL workflows you submit to the Fred Hutch cluster. Your PROOF server is like a puppet-master, coordinating the tasks articulated in your WDL, ensuring that workflow results are cached for faster execution, and parallelizing your computing with no extra effort on your part."""
 img = "images/pwb-start-server.png"
 
 [[extra.get_started]]
