@@ -26,6 +26,16 @@
       href="{{ get_url(path='images/favicon.png') }}"
       type="image/png"
     />
+    {% if config.extra.google_analytics_id %}
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.google_analytics_id }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ config.extra.google_analytics_id }}');
+    </script>
+    {% endif %}
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
