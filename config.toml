@@ -11,6 +11,8 @@ style = "inline"
 theme = "github-dark"
 
 [extra]
+google_analytics_id = "G-F8NWF32PC7"
+
 navbar_links = [
   { title = "OCDO", url = "https://ocdo.fredhutch.org", external = true },
   { title = "SciWiki", url = "https://sciwiki.fredhutch.org/datascience/proof/", external = true },

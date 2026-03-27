@@ -70,7 +70,7 @@ bi_icon = "bi-pc-display-horizontal"
 
 [[extra.cards_learn_to_use]]
 title = "Ready to dig into PROOF Workbench?"
-text = """[Our tutorial](https://sciwiki.fredhutch.org/datademos/pwb-tutorial/) is a great was to get acquainted with PROOF."""
+text = """[Our tutorial](https://sciwiki.fredhutch.org/datademos/pwb-tutorial/) is a great way to get acquainted with PROOF."""
 bi_icon = "bi-tools"
 
 [[extra.cards_learn_to_use]]
